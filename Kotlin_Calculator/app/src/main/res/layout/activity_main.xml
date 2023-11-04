@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="division"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtractButton" />
+
+    <EditText
+        android:id="@+id/numberOne"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="Number 1"
+        android:inputType="text"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberTwo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Number 2"
+        android:inputType="text"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/subtractButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOne" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="27dp"
+        android:onClick="summation"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/numberTwo"
+        app:layout_constraintTop_toBottomOf="@+id/numberTwo" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="subtraction"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/numberTwo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:onClick="multiplication"
+        android:text="*"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/addButton"
+        app:layout_constraintStart_toStartOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="387dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="131dp"
+        android:hint="Result :"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divideButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
